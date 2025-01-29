@@ -3,7 +3,7 @@ import Card from './Card';
 
 const CardGrid = ({ searchTerm }) => {
     const [newsData, setNewsData] = useState([]);
-    const api_key = "fcdb7d022315477abfe143909e55bbff";
+    const api_key = import.meta.env.VITE_API_KEY;
 
     useEffect(() => {
         const fetchNews = async () => {
